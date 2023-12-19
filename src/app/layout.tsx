@@ -1,8 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Figtree } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+  const FigFont = Figtree({
+    display: "swap",
+    subsets:["latin"],
+    weight:["400", "500", "600", "700", "800"],
+    variable: "--font-montserrat",
+  })
 
 export const metadata: Metadata = {
   title: 'MySpotify',
@@ -16,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={FigFont.className}>{children}</body>
     </html>
   )
 }

@@ -1,21 +1,25 @@
-import { Box, Flex, Spacer } from "../../styled-system/jsx"
+import { Box, Flex, Spacer, HStack } from "../../styled-system/jsx"
 import Link from 'next/link'
 import { FiSearch } from 'react-icons/fi';
-import { MdLibraryMusic, MdHomeFilled  } from "react-icons/md";
+import { MdLibraryMusic, MdHomeFilled, MdCancel } from "react-icons/md";
+import { FaPlus, FaArrowRight, FaList } from "react-icons/fa6"
+import { TiPin } from "react-icons/ti";
 import {Icon, SpanText, Text} from "../primitives";
+import { Button } from "@/custom/button";
+import { Pills } from "@/custom/pills";
 
 const Sidebar = () => {
   return (
-    <Box border={"1px solid black"} bg={"#000000"} color={"#ffffff"} >
+    <Box border={"1px solid black"} bg={"#000000"} p={"2"} w={"40%"}>
         
-        <Box borderRadius={"4"} bg={"#121212"}>
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="10" py="5" mb="12">
             <Link href="#">
                 <Flex alignItems={"center"} mb={4}>
                     <Icon>
                         <MdHomeFilled  />
                     </Icon>
                     <Text ml={2} fontWeight="bold">
-                        Dashboard
+                        Home
                     </Text>
                 </Flex>
             </Link>
@@ -31,10 +35,10 @@ const Sidebar = () => {
             </Link>
         </Box>
 
-        <Box borderRadius={"4"} bg={"#121212"}>
+        <Box borderRadius={"8"} bg={"#121212"} color={"#ffffff"} px={"10"} py={"5"}>
             <Flex alignItems={"center"}>
                 <Link href="#">
-                    <Flex alignItems={"center"} mb={4}>
+                    <Flex alignItems={"center"}>
                         <Icon>
                             <MdLibraryMusic />
                         </Icon>
@@ -44,48 +48,61 @@ const Sidebar = () => {
                     </Flex>
                 </Link>
                 <Spacer />
-                <Flex>
+                <Flex gap={"16px"} w={"100%"}>
                     <Icon>
-                        <MdLibraryMusic />
+                        <FaPlus />
                     </Icon>
                     <Icon>
-                        <MdLibraryMusic />
+                        <FaArrowRight />
                     </Icon>
                 </Flex>
             </Flex>
-            <Flex alignItems={"center"}>
-                <Icon>
-                    <MdLibraryMusic />
-                </Icon>
-                <Icon>
-                    <MdLibraryMusic />
-                </Icon>
-                <Icon>
-                    <MdLibraryMusic />
-                </Icon>
-            </Flex>
+            <HStack alignItems={"center"}>
+                <Pills>
+                    Playlist
+                </Pills>
+                <Pills>
+                    Artists
+                </Pills>
+                <Pills>
+                    Albums
+                </Pills>
+                <Pills>
+                    Podcasts & Shows
+                </Pills>
+            </HStack>
             <Flex>
                 <Icon>
-                    <MdLibraryMusic />
+                    <FiSearch />
                 </Icon>
                 <Spacer />
-                <Icon>
-                    <MdLibraryMusic />
-                </Icon>
+               <Flex alignItems={"center"}>
+                    <Text>Recents</Text>
+                    <Icon>
+                        <FaList  />
+                    </Icon>
+               </Flex>
             </Flex>
             
             {/* Your Library */}
-            <Flex>
-                <Icon>
-                    <MdLibraryMusic />
-                </Icon>
+            <Flex alignItems={"center"}>
+                <Box bg="#ffffff" w="50px" h="50px" border={"5px solid white"}>Box</Box>
                 <Flex flexDir={"column"}>
                     <Text>Liked Songs</Text>
                     <Flex alignItems={"center"}>
-                        <Icon>
-                            <MdLibraryMusic />
-                        </Icon>
+                        <Text>Playlist</Text>
                         <Text>3 songs</Text>
+                    </Flex>
+                </Flex>
+            </Flex>
+
+            <Flex alignItems={"center"}>
+                <Box bg="#ffffff" w="50px" h="50px" border={"5px solid white"}>Box</Box>
+                <Flex flexDir={"column"}>
+                    <Text>Liked Songs</Text>
+                    <Flex alignItems={"center"}>
+                        <Text>Afrobeats</Text>
+                        <Text>Eben Ofere</Text>
                     </Flex>
                 </Flex>
             </Flex>
