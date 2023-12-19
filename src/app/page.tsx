@@ -1,14 +1,20 @@
 import Sidebar from '@/components/Sidebar';
 import { css } from '../../styled-system/css';
-import { Box, Flex } from '../../styled-system/jsx';
+import { Box, Center, Flex } from '../../styled-system/jsx';
  
 export default function Home() {
   return (
-    <Flex flexDirection="row">
-      <Sidebar />
-      <Box>Lasgidi</Box>
-    </Flex>
+    <Box>
+      <Flex alignItems={"center"} border={"1px solid black"}>
+        <Box flex={"1"}>
+          <Sidebar />
+        </Box>
+        <Box flex={"3"} bg={"blue.500"}>
+          <Box>
+            Lasgidi
+          </Box>
+        </Box>
+      </Flex>
+    </Box>
   )
 }
-
-{/* <div className={css({ fontSize: "2xl", fontWeight: 'bold' })}>Hello 🐼!</div> */}
