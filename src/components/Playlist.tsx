@@ -10,8 +10,8 @@ import { Pills } from '@/custom/pills';
 
 const Playlist = () => {
   return (
-    <Box  w={"65%"} minH={"100vh"} p={"2"}>
-       <Box bg={"#121212"} rounded={"lg"} color={"#ffffff"} px="10" py="5">
+    <Box  w={"65%"} p={"2"}>
+       <Box bg={"#121212"} color={"#ffffff"} px="10" py="5">
             <Flex w={"full"} align={"center"} justifyContent={"space-between"} border={"1px solid #ffffff"} mb={"12"}>
                 <Flex alignItems={"center"} gap={"8px"}>
                     <Icon>
