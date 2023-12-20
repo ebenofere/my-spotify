@@ -1,4 +1,5 @@
 import { Box, Flex, Spacer, HStack } from "../../styled-system/jsx"
+import { css } from "../../styled-system/css"
 import Link from 'next/link'
 import { FiSearch } from 'react-icons/fi';
 import { MdLibraryMusic, MdHomeFilled, MdCancel } from "react-icons/md";
@@ -10,11 +11,10 @@ import { Pills } from "@/custom/pills";
 
 const Sidebar = () => {
   return (
-    <Box border={"1px solid black"} bg={"#000000"} p={"2"} w={"40%"}>
-        
-        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="10" py="5" mb="12">
+    <Box p={"2"} w={"35%"}>
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" mb="4">
             <Link href="#">
-                <Flex alignItems={"center"} mb={4}>
+                <Flex alignItems={"center"} mb={4} gap={"1em"}>
                     <Icon>
                         <MdHomeFilled  />
                     </Icon>
@@ -24,7 +24,7 @@ const Sidebar = () => {
                 </Flex>
             </Link>
             <Link href="#">
-                <Flex alignItems={"center"} mb={4}>
+                <Flex alignItems={"center"} gap={"1em"}>
                     <Icon>
                         <FiSearch />
                     </Icon>
@@ -35,10 +35,10 @@ const Sidebar = () => {
             </Link>
         </Box>
 
-        <Box borderRadius={"8"} bg={"#121212"} color={"#ffffff"} px={"10"} py={"5"}>
-            <Flex alignItems={"center"}>
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4">
+            <Flex alignItems={"center"} justifyContent={"space-between"} border={"1px solid #ffffff"}>
                 <Link href="#">
-                    <Flex alignItems={"center"}>
+                    <Flex alignItems={"center"} gap={"16px"}>
                         <Icon>
                             <MdLibraryMusic />
                         </Icon>
@@ -57,27 +57,29 @@ const Sidebar = () => {
                     </Icon>
                 </Flex>
             </Flex>
-            <HStack alignItems={"center"}>
-                <Pills>
+
+            <HStack alignItems={"center"} my={"4"}>
+                <Pills bg={"#232323"}>
                     Playlist
                 </Pills>
-                <Pills>
+                <Pills bg={"#232323"}>
                     Artists
                 </Pills>
-                <Pills>
+                <Pills bg={"#232323"}>
                     Albums
                 </Pills>
-                <Pills>
-                    Podcasts & Shows
+                <Pills bg={"#232323"}>
+                    Podcasts
                 </Pills>
             </HStack>
-            <Flex>
+
+            <Flex my={"4"}>
                 <Icon>
                     <FiSearch />
                 </Icon>
                 <Spacer />
-               <Flex alignItems={"center"}>
-                    <Text>Recents</Text>
+               <Flex alignItems={"center"} gap={"8px"}>
+                    <Text fontSize={"14px"} >Recents</Text>
                     <Icon>
                         <FaList  />
                     </Icon>
@@ -85,27 +87,42 @@ const Sidebar = () => {
             </Flex>
             
             {/* Your Library */}
-            <Flex alignItems={"center"}>
-                <Box bg="#ffffff" w="50px" h="50px" border={"5px solid white"}>Box</Box>
+            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
+                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
                 <Flex flexDir={"column"}>
-                    <Text>Liked Songs</Text>
-                    <Flex alignItems={"center"}>
-                        <Text>Playlist</Text>
-                        <Text>3 songs</Text>
+                    <Text fontWeight={"bold"}>Liked Songs</Text>
+                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"} className={css({pos:"relative"})}>
+                        <Text fontSize={"14px"}>Playlist </Text>
+                        <Text fontWeight={"extrabold"} className={css({pos:"absolute", right:"-5px", top:"-5px"})}>.</Text>
+                        <Text fontSize={"14px"}>3 songs</Text>
                     </Flex>
                 </Flex>
             </Flex>
 
-            <Flex alignItems={"center"}>
-                <Box bg="#ffffff" w="50px" h="50px" border={"5px solid white"}>Box</Box>
+            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
+                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
                 <Flex flexDir={"column"}>
-                    <Text>Liked Songs</Text>
-                    <Flex alignItems={"center"}>
-                        <Text>Afrobeats</Text>
-                        <Text>Eben Ofere</Text>
+                    <Text fontWeight={"bold"}>Gospel</Text>
+                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"} className={css({pos:"relative"})}>
+                        <Text fontSize={"14px"}>Playlist </Text>
+                        <Text fontWeight={"extrabold"} className={css({pos:"absolute", right:"-5px", top:"-5px"})}>.</Text>
+                        <Text fontSize={"14px"}>Eben Ofere</Text>
                     </Flex>
                 </Flex>
             </Flex>
+
+            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
+                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
+                <Flex flexDir={"column"}>
+                    <Text fontWeight={"bold"}>Afrobeats</Text>
+                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"} className={css({pos:"relative"})}>
+                        <Text fontSize={"14px"}>Playlist </Text>
+                        <Text fontWeight={"extrabold"} className={css({pos:"absolute", right:"-5px", top:"-5px"})}>.</Text>
+                        <Text fontSize={"14px"}>Eben Ofere</Text>
+                    </Flex>
+                </Flex>
+            </Flex>
+
         </Box>
     </Box>
   )

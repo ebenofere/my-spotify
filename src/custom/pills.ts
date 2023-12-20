@@ -6,8 +6,9 @@ export const Pills = styled("button", {
         // h: '56px',
         borderRadius: '20px',
         // color:'#FF0000',
-        border: '1px solid #ffffff',
+        // border: '1px solid #ffffff',
         padding: "5px 3px",
-        fontSize: "12px"
+        fontSize: "12px",
+        fontWeight:"bold"
     }
 });
