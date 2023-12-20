@@ -2,8 +2,8 @@ import { Text } from '@/primitives'
 import { Box, Flex } from '../../styled-system/jsx'
 import { FcLike } from "react-icons/fc";
 import { FaPlay, FaPause, FaForward, FaBackward } from 'react-icons/fa';
-import { BsPlayBtn } from "react-icons/bs";
-import { TbMicrophone2 } from "react-icons/tb";
+import { BsPlayBtn, BsFillRewindFill, BsFastForwardFill, BsRepeat } from "react-icons/bs";
+import { TbMicrophone2, TbArrowsShuffle  } from "react-icons/tb";
 import { HiOutlineQueueList } from "react-icons/hi2";
 import { MdOfflineShare } from "react-icons/md";
 import { LuVolume2 } from "react-icons/lu";
@@ -21,13 +21,30 @@ const MusicPlayer = () => {
             <FcLike />
         </Flex>
 
+        <Flex flexDir={"column"} alignItems={"center"} gap={"16px"}>
+            <Flex alignItems={"center"} gap={"32px"}>
+                <TbArrowsShuffle /> 
+                <BsFillRewindFill />
+                <Flex rounded={"50%"} bg={"#ff0000"} alignItems={"center"} justifyContent={"center"}>
+                    <FaPlay />
+                </Flex>
+                <BsFastForwardFill />
+                <BsRepeat />
+            </Flex>
+            <Flex alignItems={"center"} gap={"16px"}>
+                <Text fontSize={"14px"}>0:00</Text>
+                <Box rounded={"lg"} w={"20em"} h={"4px"} bg={"#ffffff"}></Box>
+                <Text fontSize={"14px"}>3:02</Text>
+            </Flex>
+        </Flex>
+
         <Flex alignItems={"center"} gap={"16px"}>
             <BsPlayBtn />
             <TbMicrophone2 />
             <HiOutlineQueueList />
             <MdOfflineShare />
             <LuVolume2 />
-            <Box rounded={"lg"} w={"5em"} h={"1em"} bg={"#ffffff"}></Box>
+            <Box rounded={"lg"} w={"5em"} h={"4px"} bg={"#ffffff"}></Box>
             <CgMiniPlayer />
         </Flex>
 
