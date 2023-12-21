@@ -7,8 +7,8 @@ import MusicPlayer from '@/components/MusicPlayer';
  
 export default function Home() {
   return (
-    <Flex flexDir={"column"} border={"1px solid black"} w={"full"} bg={"#000000"} minH={"100vh"}>
-        <Flex w={"full"}>
+    <Flex flexDir={"column"} w={"full"} bg={"#000000"} h={"100vh"} overflow={'hidden'}>
+        <Flex w={"full"} h={'80%'} overflow={'scroll'} scrollbar={'hidden'}>
           <Sidebar />
           <Playlist />
         </Flex>

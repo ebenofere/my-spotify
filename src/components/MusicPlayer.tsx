@@ -1,5 +1,5 @@
 import { Text } from '@/primitives'
-import { Box, Flex } from '../../styled-system/jsx'
+import { Box, Circle, Flex } from '../../styled-system/jsx'
 import { FcLike } from "react-icons/fc";
 import { FaPlay, FaPause, FaForward, FaBackward } from 'react-icons/fa';
 import { BsPlayBtn, BsFillRewindFill, BsFastForwardFill, BsRepeat } from "react-icons/bs";
@@ -11,7 +11,7 @@ import { CgMiniPlayer } from "react-icons/cg";
 
 const MusicPlayer = () => {
   return (
-    <Flex border={"1px solid #ffffff"} color={"#ffffff"} alignItems={"center"} justifyContent={"space-between"} p={"1em"}>
+    <Flex w={'full'} border={"1px solid #ffffff"} color={"#ffffff"} alignItems={"center"} justifyContent={"space-between"} p={"1em"}>
         <Flex alignItems={"center"} gap={"16px"}>
             <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
             <Flex flexDir={"column"}>
@@ -25,9 +25,9 @@ const MusicPlayer = () => {
             <Flex alignItems={"center"} gap={"32px"}>
                 <TbArrowsShuffle /> 
                 <BsFillRewindFill />
-                <Flex rounded={"50%"} bg={"#ff0000"} alignItems={"center"} justifyContent={"center"}>
+                <Circle size={'2em'} bg={"#ffffff"} color={"#000000"}>
                     <FaPlay />
-                </Flex>
+                </Circle>
                 <BsFastForwardFill />
                 <BsRepeat />
             </Flex>
@@ -36,6 +36,11 @@ const MusicPlayer = () => {
                 <Box rounded={"lg"} w={"20em"} h={"4px"} bg={"#ffffff"}></Box>
                 <Text fontSize={"14px"}>3:02</Text>
             </Flex>
+
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg" />
+                <source src="horse.mp3" type="audio/mpeg" />
+            </audio>
         </Flex>
 
         <Flex alignItems={"center"} gap={"16px"}>
