@@ -1,7 +1,11 @@
 import { styled } from "../../styled-system/jsx"
 
 export const THead = styled('th', {
-
+    base: {
+        display:"flex",
+        alignItems:"flex-start",
+        border:"1px solid #ffffff"
+    }
 })
 export const TRow = styled('tr', {
     base: {
