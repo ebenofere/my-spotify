@@ -1,7 +1,7 @@
 import Sidebar from '@/components/Sidebar';
 import MusicPlayer from '@/components/MusicPlayer';
 import { Flex } from '../../../styled-system/jsx';
-import HomepagePartition from '@/components/HomepagePartition';
+import { HomepagePartition } from '@/components/HomepagePartition';
  
 export default function Home() {
   return (
