@@ -14,14 +14,16 @@ const Sidebar = () => {
     <Box p={"2"} w={"35%"} h={'full'}>
         <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" mb="4">
             <Link href="#">
-                <Flex alignItems={"center"} mb={4} gap={"1em"}>
-                    <Icon>
-                        <MdHomeFilled  />
-                    </Icon>
-                    <Text ml={2} fontWeight="bold">
-                        Home
-                    </Text>
-                </Flex>
+                <Link href="/home">
+                    <Flex alignItems={"center"} mb={4} gap={"1em"}>
+                        <Icon>
+                            <MdHomeFilled  />
+                        </Icon>
+                        <Text ml={2} fontWeight="bold">
+                            Home
+                        </Text>
+                    </Flex>
+                </Link>
             </Link>
             <Link href="#">
                 <Flex alignItems={"center"} gap={"1em"}>
@@ -37,7 +39,7 @@ const Sidebar = () => {
 
         <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4">
             <Flex alignItems={"center"} justifyContent={"space-between"} w={'full'}>
-                <Link href="#">
+                <Link href="/">
                     <Flex alignItems={"center"} gap={"16px"}>
                         <Icon>
                             <MdLibraryMusic />
