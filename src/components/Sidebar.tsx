@@ -15,19 +15,17 @@ const Sidebar = () => {
   return (
     <Box p={"2"} w={"35%"} h={'full'}>
         <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" mb="4">
-            <Link href="#">
-                <Link href="/home">
-                    <Flex alignItems={"center"} mb={4} gap={"1em"}>
-                        <Icon>
-                            <MdHomeFilled  />
-                        </Icon>
-                        <Text ml={2} fontWeight="bold">
-                            Home
-                        </Text>
-                    </Flex>
-                </Link>
+            <Link href="/home">
+                <Flex alignItems={"center"} mb={4} gap={"1em"}>
+                    <Icon>
+                        <MdHomeFilled  />
+                    </Icon>
+                    <Text ml={2} fontWeight="bold">
+                        Home
+                    </Text>
+                </Flex>
             </Link>
-            <Link href="#">
+            <Link href="/search">
                 <Flex alignItems={"center"} gap={"1em"}>
                     <Icon>
                         <FiSearch />

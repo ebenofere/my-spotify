@@ -10,3 +10,7 @@ export type TLibraryCard = TCardSmall & {
     author?: string,
     songsTotal?: string,
 }
+
+export type TSearchPageCard = TCardSmall & {
+
+}
