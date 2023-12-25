@@ -8,6 +8,8 @@ import { TiPin } from "react-icons/ti";
 import {Icon, SpanText, Text} from "../primitives";
 import { Button } from "@/custom/button";
 import { Pills } from "@/custom/pills";
+import LibraryCard from "./LibraryCard";
+import { trunc } from "@/utils/helpers";
 
 const Sidebar = () => {
   return (
@@ -37,7 +39,7 @@ const Sidebar = () => {
             </Link>
         </Box>
 
-        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4">
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" overflow={"scroll"} scrollbar={"hidden"}>
             <Flex alignItems={"center"} justifyContent={"space-between"} w={'full'}>
                 <Link href="/">
                     <Flex alignItems={"center"} gap={"16px"}>
@@ -88,42 +90,15 @@ const Sidebar = () => {
             </Flex>
             
             {/* Your Library */}
-            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
-                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
-                <Flex flexDir={"column"}>
-                    <Text fontWeight={"bold"}>Liked Songs</Text>
-                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"}>
-                        <Text fontSize={"14px"}>Playlist</Text>
-                        <Text fontWeight={"extrabold"}> . </Text>
-                        <Text fontSize={"14px"}>5 songs</Text>
-                    </Flex>
-                </Flex>
-            </Flex>
-
-            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
-                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
-                <Flex flexDir={"column"}>
-                    <Text fontWeight={"bold"}>Gospel</Text>
-                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"}>
-                        <Text fontSize={"14px"}>Playlist</Text>
-                        <Text fontWeight={"extrabold"}> . </Text>
-                        <Text fontSize={"14px"}>Eben Ofere</Text>
-                    </Flex>
-                </Flex>
-            </Flex>
-
-            <Flex alignItems={"center"} mb={"4"} gap={"16px"}>
-                <Box rounded={"lg"} bg="#ffffff" w="50px" h="50px"></Box>
-                <Flex flexDir={"column"}>
-                    <Text fontWeight={"bold"}>Afrobeats</Text>
-                    <Flex alignItems={"center"} justifyContent={"space-between"} gap={"8px"}>
-                        <Text fontSize={"14px"}>Playlist</Text>
-                        <Text fontWeight={"extrabold"}> . </Text>
-                        <Text fontSize={"14px"}>Eben Ofere</Text>
-                    </Flex>
-                </Flex>
-            </Flex>
-
+            <LibraryCard title={trunc("Liked Songs", 30)} author="Eben Ofere" songsTotal="5 songs" />
+            <LibraryCard title={trunc("Naija Gospel", 30)} author="Eben Ofere" />
+            <LibraryCard title={trunc("South African House", 30)} author="Eben Ofere" />
+            <LibraryCard title={trunc("Razz", 30)} author="Eben Ofere" />
+            <LibraryCard title={trunc("Yinka Ayefele's Playlist", 30)} author="Mokson, the Playlist Guy!" />
+            <LibraryCard title={trunc("Old School", 30)} author="Eben Ofere" />
+            <LibraryCard title={trunc("Seyi Vibez", 30)} author="Mokson, the Playlist Guy!" />
+            <LibraryCard title={trunc("EDM Classics", 30)} author="Mokson, the Playlist Guy!" />
+            <LibraryCard title={trunc("RYAN OFEI ESSENTIALS | New Every Morning", 30)} author="Ryan Ofei" />
         </Box>
     </Box>
   )

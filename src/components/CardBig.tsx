@@ -1,16 +1,18 @@
-import { Box, Flex } from '../../styled-system/jsx'
+import { Box, Flex, VStack } from '../../styled-system/jsx'
 import { Text } from '@/primitives'
+import { TCardBig } from '@/types/card'
+import { trunc } from '@/utils/helpers'
 
-const CardBig = ({ title }) => {
+const CardBig = ({ title, artist } : TCardBig) => {
   return (
     <>
-        <Box bg={"#121212"} rounded={"lg"} boxShadow="lg">
-          <Box rounded={"lg"} bg="#ffffff" w="9em" h="9em" mb={4}></Box>
-          <Box border={'1px solid #ffffff'}>
-            <Text fontWeight={"bold"} fontSize={"16px"}>Daily Mix 1</Text>
-            <Text fontSize={"14px"}>Davido, Kizz Daniel, Burna Boy and more</Text>
+        <VStack bg={"#121212"} rounded={"lg"} boxShadow="lg" p={"1em"} w={"full"} alignItems={"flex-start"}>
+          <Box rounded={"lg"} bg="#ffffff" w="full" h="9em" mb={2}></Box>
+          <Box mb={2}>
+            <Text fontWeight={"bold"} fontSize={"16px"}>{ title }</Text>
+            <Text fontSize={"14px"}>{ artist }</Text>
           </Box>
-        </Box>
+        </VStack>
     </>
   )
 }
