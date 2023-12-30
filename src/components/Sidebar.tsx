@@ -37,7 +37,7 @@ const Sidebar = () => {
             </Link>
         </Box>
 
-        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" overflow={"scroll"} scrollbar={"hidden"}>
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4">
             <Flex alignItems={"center"} justifyContent={"space-between"} w={'full'}>
                 <Link href="/">
                     <Flex alignItems={"center"} gap={"16px"}>
@@ -73,30 +73,32 @@ const Sidebar = () => {
                     Podcasts
                 </Pills>
             </HStack>
-
-            <Flex my={"4"}>
-                <Icon>
-                    <FiSearch />
-                </Icon>
-                <Spacer />
-               <Flex alignItems={"center"} gap={"8px"}>
-                    <Text fontSize={"14px"} >Recents</Text>
-                    <Icon>
-                        <FaList  />
-                    </Icon>
-               </Flex>
-            </Flex>
             
             {/* Your Library */}
-            <LibraryCard title={trunc("Liked Songs", 30)} author="Eben Ofere" songsTotal="5 songs" />
-            <LibraryCard title={trunc("Naija Gospel", 30)} author="Eben Ofere" />
-            <LibraryCard title={trunc("South African House", 30)} author="Eben Ofere" />
-            <LibraryCard title={trunc("Razz", 30)} author="Eben Ofere" />
-            <LibraryCard title={trunc("Yinka Ayefele's Playlist", 30)} author="Mokson, the Playlist Guy!" />
-            <LibraryCard title={trunc("Old School", 30)} author="Eben Ofere" />
-            <LibraryCard title={trunc("Seyi Vibez", 30)} author="Mokson, the Playlist Guy!" />
-            <LibraryCard title={trunc("EDM Classics", 30)} author="Mokson, the Playlist Guy!" />
-            <LibraryCard title={trunc("RYAN OFEI ESSENTIALS | New Every Morning", 30)} author="Ryan Ofei" />
+            <Box overflow={"scroll"} scrollbar={"hidden"}>
+                <Flex my={"4"}>
+                    <Icon>
+                        <FiSearch />
+                    </Icon>
+                    <Spacer />
+                    <Flex alignItems={"center"} gap={"8px"}>
+                        <Text fontSize={"14px"} >Recents</Text>
+                        <Icon>
+                            <FaList  />
+                        </Icon>
+                    </Flex>
+                </Flex>
+
+                <LibraryCard title={trunc("Liked Songs", 30)} author="Eben Ofere" songsTotal="5 songs" />
+                <LibraryCard title={trunc("Naija Gospel", 30)} author="Eben Ofere" />
+                <LibraryCard title={trunc("South African House", 30)} author="Eben Ofere" />
+                <LibraryCard title={trunc("Razz", 30)} author="Eben Ofere" />
+                <LibraryCard title={trunc("Yinka Ayefele's Playlist", 30)} author="Mokson, the Playlist Guy!" />
+                <LibraryCard title={trunc("Old School", 30)} author="Eben Ofere" />
+                <LibraryCard title={trunc("Seyi Vibez", 30)} author="Mokson, the Playlist Guy!" />
+                <LibraryCard title={trunc("EDM Classics", 30)} author="Mokson, the Playlist Guy!" />
+                <LibraryCard title={trunc("RYAN OFEI ESSENTIALS | New Every Morning", 30)} author="Ryan Ofei" />
+            </Box>
         </Box>
     </Box>
   )
