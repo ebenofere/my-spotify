@@ -1,7 +1,7 @@
 "use client" 
 import { Box, Flex, HStack } from '../../styled-system/jsx'
 import { Afrobeats } from '@/constants'
-import { TData, THead, TRow } from '@/primitives/Table'
+import { THead, TRow, TData } from '@/primitives/Table'
 import Image from 'next/image'
 import { Text } from '@/primitives'
 

@@ -9,13 +9,13 @@ const Footer = () => {
         <HStack alignItems={"flex-start"} justify={"space-between"} mt={12}>
             <HStack alignItems={"flex-start"} gap={"9em"} justify={"space-between"}>
                 <VStack alignItems={"flex-start"}>
-                    <Text fontWeight={"bold"}>Company</Text>
+                    <Text fontWeight={"extrabold"}>Company</Text>
                     <Text>About</Text>
                     <Text>Jobs</Text>
                     <Text>For the Record</Text>
                 </VStack>
                 <VStack alignItems={"flex-start"}> 
-                    <Text fontWeight={"bold"}>Communities</Text>
+                    <Text fontWeight={"extrabold"}>Communities</Text>
                     <Text>For Artists</Text>
                     <Text>Developers</Text>
                     <Text>Advertising</Text>
@@ -38,7 +38,7 @@ const Footer = () => {
         </HStack>
 
         <VStack alignItems={"flex-start"} mt={8}>
-            <Text fontWeight={"bold"}>Useful links</Text>
+            <Text fontWeight={"extrabold"}>Useful links</Text>
             <Text>Support</Text>
             <Text>Free Mobile App</Text>
         </VStack>  
