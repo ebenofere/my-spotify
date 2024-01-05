@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, HStack } from "../../styled-system/jsx"
+import { Box, Flex, Spacer, HStack, VStack } from "../../styled-system/jsx"
 import { css } from "../../styled-system/css"
 import Link from 'next/link'
 import { FiSearch } from 'react-icons/fi';
@@ -75,7 +75,7 @@ const Sidebar = () => {
             </HStack>
             
             {/* Your Library */}
-            <Box overflow={"scroll"} scrollbar={"hidden"}>
+            <Box overflow={"scroll"} height={"40rem"} >
                 <Flex my={"4"}>
                     <Icon>
                         <FiSearch />
@@ -89,15 +89,17 @@ const Sidebar = () => {
                     </Flex>
                 </Flex>
 
-                <LibraryCard title={trunc("Liked Songs", 30)} author="Eben Ofere" songsTotal="5 songs" />
-                <LibraryCard title={trunc("Naija Gospel", 30)} author="Eben Ofere" />
-                <LibraryCard title={trunc("South African House", 30)} author="Eben Ofere" />
-                <LibraryCard title={trunc("Razz", 30)} author="Eben Ofere" />
-                <LibraryCard title={trunc("Yinka Ayefele's Playlist", 30)} author="Mokson, the Playlist Guy!" />
-                <LibraryCard title={trunc("Old School", 30)} author="Eben Ofere" />
-                <LibraryCard title={trunc("Seyi Vibez", 30)} author="Mokson, the Playlist Guy!" />
-                <LibraryCard title={trunc("EDM Classics", 30)} author="Mokson, the Playlist Guy!" />
-                <LibraryCard title={trunc("RYAN OFEI ESSENTIALS | New Every Morning", 30)} author="Ryan Ofei" />
+                <VStack gap={"4"} alignItems={"left"}>
+                    <LibraryCard title={trunc("Liked Songs", 30)} author="Eben Ofere" songsTotal="5 songs" />
+                    <LibraryCard title={trunc("Naija Gospel", 30)} author="Eben Ofere" />
+                    <LibraryCard title={trunc("South African House", 30)} author="Eben Ofere" />
+                    <LibraryCard title={trunc("Razz", 30)} author="Eben Ofere" />
+                    <LibraryCard title={trunc("Yinka Ayefele's Playlist", 30)} author="Mokson, the Playlist Guy!" />
+                    <LibraryCard title={trunc("Old School", 30)} author="Eben Ofere" />
+                    <LibraryCard title={trunc("Seyi Vibez", 30)} author="Mokson, the Playlist Guy!" />
+                    <LibraryCard title={trunc("EDM Classics", 30)} author="Mokson, the Playlist Guy!" />
+                    <LibraryCard title={trunc("RYAN OFEI ESSENTIALS | New Every Morning", 30)} author="Ryan Ofei" />
+                </VStack>
             </Box>
         </Box>
     </Box>
