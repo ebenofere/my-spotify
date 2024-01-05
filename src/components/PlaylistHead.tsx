@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Flex } from '../../styled-system/jsx'
 import { Text } from '@/primitives'
 

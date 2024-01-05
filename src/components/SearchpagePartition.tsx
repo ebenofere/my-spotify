@@ -1,16 +1,12 @@
-import { Box, Circle, Divider, Flex, Grid, HStack, VStack } from '../../styled-system/jsx'
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import { Box, Grid } from '../../styled-system/jsx'
 import Navbar from './Navbar'
 import { Text } from '@/primitives'
-import CardSmall from './CardSmall'
-import CardBig from './CardBig'
-import { trunc } from '@/utils/helpers'
 import SearchpageCard from './SearchpageCard';
 import Footer from './Footer';
 
 const SearchpagePartition = () => {
     return (
-        <Box  w={"65%"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} bg={"#121212"} >
+        <Box  w={"65%"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} bg={"#121212"} rounded={"lg"} my={"2"}>
             <Navbar />
             <Box color={"#ffffff"} px="10" pb="5" rounded={"lg"}>
                 <Text fontSize={"1.5em"} fontWeight={"bold"} mb={4}>Browse all</Text>

@@ -1,7 +1,6 @@
-import { Box, Flex, VStack } from '../../styled-system/jsx'
+import { Box, VStack } from '../../styled-system/jsx'
 import { Text } from '@/primitives'
 import { TCardBig } from '@/types/card'
-import { trunc } from '@/utils/helpers'
 
 const CardBig = ({ title, artist } : TCardBig) => {
   return (

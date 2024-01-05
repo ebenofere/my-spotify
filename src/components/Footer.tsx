@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
 import { Box, Circle, Divider, HStack, VStack } from '../../styled-system/jsx'
 import { Text } from '@/primitives'

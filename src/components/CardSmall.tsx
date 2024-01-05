@@ -1,4 +1,4 @@
-import { TCardBig, TCardSmall } from '@/types/card'
+import { TCardSmall } from '@/types/card'
 import { Box, Flex } from '../../styled-system/jsx'
 import { Text } from '@/primitives'
 

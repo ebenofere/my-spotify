@@ -1,12 +1,9 @@
 import { Box, Flex, Spacer, HStack, VStack } from "../../styled-system/jsx"
-import { css } from "../../styled-system/css"
 import Link from 'next/link'
 import { FiSearch } from 'react-icons/fi';
-import { MdLibraryMusic, MdHomeFilled, MdCancel } from "react-icons/md";
+import { MdLibraryMusic, MdHomeFilled } from "react-icons/md";
 import { FaPlus, FaArrowRight, FaList } from "react-icons/fa6"
-import { TiPin } from "react-icons/ti";
-import {Icon, SpanText, Text} from "../primitives";
-import { Button } from "@/custom/button";
+import {Icon, Text } from "../primitives";
 import { Pills } from "@/custom/pills";
 import LibraryCard from "./LibraryCard";
 import { trunc } from "@/utils/helpers";

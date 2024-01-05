@@ -5,7 +5,6 @@ export const Button = styled("button", {
         w: 'full',
         h: '56px',
         rounded: '5px',
-        // color:'#FF0000',
         border: '1px solid #ffffff'
     }
 });

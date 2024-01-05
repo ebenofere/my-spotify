@@ -1,7 +1,7 @@
 import { Text } from '@/primitives'
 import { Box, Circle, Flex } from '../../styled-system/jsx'
 import { FcLike } from "react-icons/fc";
-import { FaPlay, FaPause, FaForward, FaBackward } from 'react-icons/fa';
+import { FaPlay } from 'react-icons/fa';
 import { BsPlayBtn, BsFillRewindFill, BsFastForwardFill, BsRepeat } from "react-icons/bs";
 import { TbMicrophone2, TbArrowsShuffle  } from "react-icons/tb";
 import { HiOutlineQueueList } from "react-icons/hi2";

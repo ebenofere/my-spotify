@@ -1,5 +1,5 @@
 import Sidebar from '@/components/Sidebar';
-import { Box, Center, Flex } from '../../styled-system/jsx';
+import { Flex } from '../../styled-system/jsx';
 import MusicPlayer from '@/components/MusicPlayer';
 import { Playlist } from '@/components/Playlist';
  
