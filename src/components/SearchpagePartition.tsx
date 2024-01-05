@@ -10,9 +10,9 @@ import Footer from './Footer';
 
 const SearchpagePartition = () => {
     return (
-        <Box  w={"65%"} p={"2"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} >
-            <Box bg={"#0F171C"} color={"#ffffff"} px="10" py="5" rounded={"lg"}>
-                <Navbar />
+        <Box  w={"65%"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} bg={"#121212"} >
+            <Navbar />
+            <Box color={"#ffffff"} px="10" pb="5" rounded={"lg"}>
                 <Text fontSize={"1.5em"} fontWeight={"bold"} mb={4}>Browse all</Text>
                 <Grid gridTemplateColumns="repeat(4, 1fr)" gap={"16px"}>
                     <SearchpageCard title={"Podcasts"} />
@@ -21,7 +21,7 @@ const SearchpagePartition = () => {
                     <SearchpageCard title={"Live Events"} />
                     <SearchpageCard title={"Made For You"} />
                     <SearchpageCard title={"New Releases"} />
-                    <SearchpageCard title={"2023 in Music"} />
+                    <SearchpageCard title={"Top Albums"} />
                     <SearchpageCard title={"2023 in Music"} />
                     <SearchpageCard title={"2023 in Podcasts"} />
                     <SearchpageCard title={"Merch"} />

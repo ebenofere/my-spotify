@@ -14,7 +14,7 @@ import { trunc } from "@/utils/helpers";
 const Sidebar = () => {
   return (
     <Box p={"2"} w={"35%"} h={'full'}>
-        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" mb="4">
+        <Box rounded={"lg"} bg={"#121212"} color={"#ffffff"} px="8" py="4" mb="2">
             <Link href="/home">
                 <Flex alignItems={"center"} mb={4} gap={"1em"}>
                     <Icon>
@@ -75,7 +75,7 @@ const Sidebar = () => {
             </HStack>
             
             {/* Your Library */}
-            <Box overflow={"scroll"} height={"40rem"} >
+            <Box overflow={"scroll"} height={"40rem"} scrollbar={"hidden"} >
                 <Flex my={"4"}>
                     <Icon>
                         <FiSearch />

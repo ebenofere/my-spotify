@@ -9,9 +9,9 @@ import Footer from './Footer';
 
 const HomepagePartition = () => {
   return (
-    <Box  w={"65%"} p={"2"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} >
-        <Box bg={"#0F171C"} color={"#ffffff"} px="10" py="5" rounded={"lg"}>
-            <Navbar />
+    <Box  w={"65%"} h={'full'} overflow={"scroll"} scrollbar={"hidden"} bg={"#121212"}>
+        <Navbar />
+        <Box color={"#ffffff"} px="10" py="5" rounded={"lg"}>
             <Text fontSize={"2em"} fontWeight={"bold"} mb={4}>Good evening</Text>
             <Box mb={8}>
               <Grid gridTemplateColumns="repeat(1, 1fr)" gap={"2px"}>

@@ -13,15 +13,15 @@ const Navbar = () => {
     const pathName = usePathname();
 
   return (
-    <Flex w={"full"} align={"center"} justifyContent={"space-between"} height={"100px"} mb={"6"} position={"sticky"} top={"0"} bg={"#0F171C"}>
-        <Flex alignItems={"center"} gap={"8px"}>
-            <Circle size={'2em'} bg={"#000000"}>
+    <Flex w={"full"} align={"center"} justifyContent={"space-between"} height={"75px"} mb={"6"} position={"sticky"} top={"0"} bg={"#121212"} px="10">
+        <Flex alignItems={"center"} gap={"8px"} width={"50%"}>
+            <Circle size={'2em'} bg={"#000000"} color={"#ffffff"}>
                 <GrPrevious />
             </Circle>
-            <Circle size={'2em'} bg={"#000000"}>
+            <Circle size={'2em'} bg={"#000000"} color={"#ffffff"}>
                 <GrNext />
             </Circle>
-            <Input visibility={pathName === "/search" ? "visible" : "hidden"} />
+            <Input visibility={pathName === "/search" ? "visible" : "hidden"} placeholder="What do you want to listen to?" />
         </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} gap={"16px"} w={"60%"}>
             
@@ -34,10 +34,10 @@ const Navbar = () => {
                     Install App
                 </Flex>
             </Pills>
-            <Circle size={'2em'} bg={"#000000"}>
+            <Circle size={'2em'} bg={"#000000"} color={"#ffffff"}>
                 <HiOutlineBell />
             </Circle>
-            <Circle size={'2em'} bg={"#000000"}>
+            <Circle size={'2em'} bg={"#000000"} color={"#ffffff"}>
                 <HiOutlineUser />
             </Circle>
         </Flex>

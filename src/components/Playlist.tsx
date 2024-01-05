@@ -15,9 +15,9 @@ import PlaylistOptions from './PlaylistOptions';
 
 const Playlist = () => {
   return (
-    <Box h={'full'} w={"full"} overflow={"scroll"} scrollbar={"hidden"} position={"relative"} border={"1px solid #ffffff"}>
+    <Box w={"65%"} overflow={"scroll"} scrollbar={"hidden"} position={"relative"} bg={"#121212"} rounded={"lg"} my={"2"}>
         <Navbar />
-        <Box w={"65%"} bg={"#121212"} color={"#ffffff"} px="10" py="5" rounded={"lg"}>
+        <Box width={"full"} color={"#ffffff"} px="10" py="5" rounded={"lg"}>
             <PlaylistHead />
             <PlaylistOptions />
             
