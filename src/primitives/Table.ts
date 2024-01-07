@@ -2,7 +2,7 @@ import { styled } from "../../styled-system/jsx"
 
 export const THead = styled('th', {
     base: {
-        
+        bg: "#232323"
     }
 })
 export const TRow = styled('tr', {
