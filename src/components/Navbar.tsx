@@ -24,16 +24,16 @@ const Navbar = () => {
             <Input visibility={pathName === "/search" ? "visible" : "hidden"} placeholder="What do you want to listen to?" />
         </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} gap={"16px"} w={"60%"}>
-            
             <Pills visibility={pathName === "/search" ? "hidden" : "visible"} bg={"#ffffff"} color={"#000000"} fontSize={"14px"}>
                 Explore Premium
             </Pills>
-            <Pills bg={"#000000"} color={"#ffffff"} p={"4px 1px"} fontSize={"14px"}>
+            <Pills bg={"#000000"} color={"#ffffff"} fontSize={"14px"}>
                 <Flex alignItems={"center"} justifyContent={"center"} gap={"4px"}>
                     <MdOutlineDownloadForOffline />
                     Install App
                 </Flex>
             </Pills>
+        
             <Circle size={'2em'} bg={"#000000"} color={"#ffffff"}>
                 <HiOutlineBell />
             </Circle>

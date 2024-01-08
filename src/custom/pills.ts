@@ -4,7 +4,7 @@ export const Pills = styled("div", {
     base: {
         w: 'full',
         borderRadius: '20px',
-        padding: "5px 3px",
+        padding: "5px 15px",
         fontSize: "12px",
         fontWeight:"bold",
         display: 'flex',

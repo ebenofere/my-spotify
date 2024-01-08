@@ -7,7 +7,7 @@ const PlaylistHead = () => {
         <Box rounded={"lg"} bg="#ffffff" w="9em" h="9em"></Box>
         <Flex flexDir={"column"}>
             <Text fontSize={"14px"}>Playlist</Text>
-            <Text fontSize={"3em"} fontWeight={"bold"}>Naija Gospel</Text>
+            <Text fontSize={"3em"} fontWeight={"bold"}>Afrobeats</Text>
             <Flex alignItems={"center"} gap={"8px"}>
                 <Text fontSize={"14px"} color={"#ffffff"} fontWeight={"bold"}>Eben Ofere</Text>
                 <Text fontSize={"14px"} color={"#ffffff"} fontWeight={"extrabold"}> . </Text>
