@@ -1,5 +1,6 @@
 "use client" 
 import { Box, Flex, HStack } from '../../styled-system/jsx'
+import { FaRegClock } from "react-icons/fa6";
 import { Afrobeats } from '@/constants'
 import { THead, TRow, TData } from '@/primitives/Table'
 import Image from 'next/image'
@@ -9,12 +10,12 @@ const CustomTable = () => {
   return (
     <Box>
         <table style={{width:"100%", margin:"1em 0"}}>
-            <TRow>
+            <TRow position={"sticky"} top={"16"}>
                 <THead>#</THead>
                 <THead fontSize={"14px"}>Title</THead>
                 <THead fontSize={"14px"}>Album</THead>
                 <THead fontSize={"14px"}>Date Added</THead>
-                <THead fontSize={"14px"}>Time</THead>
+                <THead fontSize={"14px"}><FaRegClock /></THead>
             </TRow>
             {Afrobeats.map((music, i) => (
                 <TRow key={music.id}>
