@@ -36,11 +36,6 @@ const MusicPlayer = () => {
                 <Box rounded={"lg"} w={"20em"} h={"4px"} bg={"#ffffff"}></Box>
                 <Text fontSize={"14px"}>3:02</Text>
             </Flex>
-
-            <audio controls>
-                <source src="horse.ogg" type="audio/ogg" />
-                <source src="horse.mp3" type="audio/mpeg" />
-            </audio>
         </Flex>
 
         <Flex alignItems={"center"} gap={"16px"}>

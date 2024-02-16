@@ -1,7 +1,7 @@
 import Sidebar from '@/components/Sidebar';
-import { Flex } from '../../styled-system/jsx';
 import MusicPlayer from '@/components/MusicPlayer';
 import { Playlist } from '@/components/Playlist';
+import { Flex } from '../../styled-system/jsx';
  
 export default function Home() {
   return (
